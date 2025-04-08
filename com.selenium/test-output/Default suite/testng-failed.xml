@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationTesting.RadioButton">
-        <methods>
-          <include name="gender"/>
-        </methods>
-      </class> <!-- automationTesting.RadioButton -->
       <class name="automationTesting.Textboxes">
         <methods>
           <include name="textboxElements"/>
+          <include name="driverDriver"/>
+          <include name="initializeDriver"/>
         </methods>
       </class> <!-- automationTesting.Textboxes -->
     </classes>
