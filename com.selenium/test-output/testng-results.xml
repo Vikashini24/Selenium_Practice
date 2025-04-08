@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-08T08:55:35 IST" name="Default suite" finished-at="2025-04-08T08:55:36 IST" duration-ms="1010">
+  <suite started-at="2025-04-08T12:25:12 IST" name="Default suite" finished-at="2025-04-08T12:25:14 IST" duration-ms="2002">
     <groups>
     </groups>
-    <test started-at="2025-04-08T08:55:35 IST" name="Default test" finished-at="2025-04-08T08:55:36 IST" duration-ms="1010">
+    <test started-at="2025-04-08T12:25:12 IST" name="Default test" finished-at="2025-04-08T12:25:14 IST" duration-ms="2002">
       <class name="automationTesting.DriverInitialization">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:29 IST" name="initializeDriver" finished-at="2025-04-08T08:55:35 IST" duration-ms="5404" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:00 IST" name="initializeDriver" finished-at="2025-04-08T12:25:12 IST" duration-ms="11189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="textboxElements()[pri:1, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:35 IST" name="textboxElements" finished-at="2025-04-08T08:55:35 IST" duration-ms="546" status="PASS">
+        <test-method signature="textboxElements()[pri:1, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:12 IST" name="textboxElements" finished-at="2025-04-08T12:25:13 IST" duration-ms="1105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textboxElements -->
-        <test-method signature="radioButton()[pri:2, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:35 IST" name="radioButton" finished-at="2025-04-08T08:55:35 IST" duration-ms="152" status="PASS">
+        <test-method signature="radioButton()[pri:2, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:13 IST" name="radioButton" finished-at="2025-04-08T12:25:13 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioButton -->
-        <test-method signature="checkboxes()[pri:3, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:35 IST" name="checkboxes" finished-at="2025-04-08T08:55:35 IST" duration-ms="152" status="PASS">
+        <test-method signature="checkboxes()[pri:3, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:13 IST" name="checkboxes" finished-at="2025-04-08T12:25:13 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkboxes -->
-        <test-method signature="selectDropdown()[pri:4, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:35 IST" name="selectDropdown" finished-at="2025-04-08T08:55:36 IST" duration-ms="116" status="PASS">
+        <test-method signature="selectDropdown()[pri:4, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:13 IST" name="selectDropdown" finished-at="2025-04-08T12:25:14 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDropdown -->
-        <test-method is-config="true" signature="driverDriver()[pri:0, instance:automationTesting.DriverInitialization@4ac3c60d]" started-at="2025-04-08T08:55:36 IST" name="driverDriver" finished-at="2025-04-08T08:55:36 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="driverDriver()[pri:0, instance:automationTesting.DriverInitialization@6572421]" started-at="2025-04-08T12:25:14 IST" name="driverDriver" finished-at="2025-04-08T12:25:14 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverDriver -->

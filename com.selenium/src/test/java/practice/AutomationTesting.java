@@ -1,4 +1,4 @@
-package automationTesting;
+package practice;
 
 import java.time.Duration;
 import java.util.List;
@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class DriverInitialization {
+public class AutomationTesting {
 	
 	WebDriver driver;
 	
@@ -68,6 +69,7 @@ public class DriverInitialization {
 		Select dropdown = new Select(country);
 		dropdown.selectByVisibleText("United Kingdom");
 	}
+	
 	
 	
 	
