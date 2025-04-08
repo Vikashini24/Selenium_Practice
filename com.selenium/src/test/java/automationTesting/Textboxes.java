@@ -9,6 +9,10 @@ public class Textboxes {
 	
 	WebDriver driver;
 	
+	public Textboxes(WebDriver driver) {
+		this.driver = driver;
+	}
+	
 	@Test (priority=1)
 	public void textboxElements() {
 		WebElement name = driver.findElement(By.id("name"));
