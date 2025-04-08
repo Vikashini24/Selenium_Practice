@@ -50,7 +50,19 @@ public class DriverInitialization {
 		}
 	}
 	
-	//div[@class='form-group']/label[@for='days']/following-sibling::div
+	@Test (priority=3)
+	public void checkboxes() {
+		List<WebElement> days = driver.findElements(By.xpath("//div[@class='form-group']/label[@for='days']/following-sibling::div"));
+		for(WebElement day : days) {
+			String selectDay = day.getText();
+			if(selectDay.equalsIgnoreCase("Wednesday")) {
+				day.click();
+				break;
+			}
+		}
+	}
+	
+	
 	
 //	@AfterSuite
 //	public void driverDriver() {
