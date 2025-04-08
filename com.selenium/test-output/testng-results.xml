@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-08T07:56:48 IST" name="Default suite" finished-at="2025-04-08T07:56:48 IST" duration-ms="50">
+  <suite started-at="2025-04-08T08:01:35 IST" name="Default suite" finished-at="2025-04-08T08:01:35 IST" duration-ms="43">
     <groups>
     </groups>
-    <test started-at="2025-04-08T07:56:48 IST" name="Default test" finished-at="2025-04-08T07:56:48 IST" duration-ms="50">
+    <test started-at="2025-04-08T08:01:35 IST" name="Default test" finished-at="2025-04-08T08:01:35 IST" duration-ms="43">
       <class name="automationTesting.RadioButton">
-        <test-method signature="gender()[pri:2, instance:automationTesting.RadioButton@4c9f8c13]" started-at="2025-04-08T07:56:48 IST" name="gender" finished-at="2025-04-08T07:56:48 IST" duration-ms="9" status="FAIL">
+        <test-method signature="gender()[pri:2, instance:automationTesting.RadioButton@4c9f8c13]" started-at="2025-04-08T08:01:35 IST" name="gender" finished-at="2025-04-08T08:01:35 IST" duration-ms="6" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
@@ -51,17 +51,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- gender -->
       </class> <!-- automationTesting.RadioButton -->
       <class name="automationTesting.DriverInitialization">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:automationTesting.DriverInitialization@3daa422a]" started-at="2025-04-08T07:56:42 IST" name="initializeDriver" finished-at="2025-04-08T07:56:48 IST" duration-ms="5373" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:automationTesting.DriverInitialization@3daa422a]" started-at="2025-04-08T08:01:29 IST" name="initializeDriver" finished-at="2025-04-08T08:01:35 IST" duration-ms="5524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method is-config="true" signature="driverDriver()[pri:0, instance:automationTesting.DriverInitialization@3daa422a]" started-at="2025-04-08T07:56:48 IST" name="driverDriver" finished-at="2025-04-08T07:56:48 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="driverDriver()[pri:0, instance:automationTesting.DriverInitialization@3daa422a]" started-at="2025-04-08T08:01:35 IST" name="driverDriver" finished-at="2025-04-08T08:01:35 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverDriver -->
       </class> <!-- automationTesting.DriverInitialization -->
       <class name="automationTesting.Textboxes">
-        <test-method signature="textboxElements()[pri:1, instance:automationTesting.Textboxes@31c88ec8]" started-at="2025-04-08T07:56:48 IST" name="textboxElements" finished-at="2025-04-08T07:56:48 IST" duration-ms="2" status="FAIL">
+        <test-method signature="textboxElements()[pri:1, instance:automationTesting.Textboxes@31c88ec8]" started-at="2025-04-08T08:01:35 IST" name="textboxElements" finished-at="2025-04-08T08:01:35 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
