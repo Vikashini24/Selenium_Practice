@@ -11,8 +11,11 @@ public class Checkboxes {
 	WebDriver driver;
 	
 	public void checkboxField() {
-		List<WebElement> days = driver.findElements(By.id("//div[@class='form-group']/label[@for='days']/following-sibling::div"));
-		
+		List<WebElement> days = driver.findElements(By.xpath("//div[@class='form-group']/label[@for='days']/following-sibling::div"));
+		for (WebElement day : days) {
+			String value = day.getText();
+			System.out.println(value);
+		}
 	}
 	
 }

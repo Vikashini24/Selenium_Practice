@@ -21,11 +21,11 @@ public class DriverInitialization {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 	
-	public void closeDriver() {
-		if(driver!=null) {
-			driver.close();
-		}
-	}
+//	public void closeDriver() {
+//		if(driver!=null) {
+//			driver.close();
+//		}
+//	}
 	
 	@AfterSuite
 	public void driverDriver() {

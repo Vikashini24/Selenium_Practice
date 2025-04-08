@@ -22,6 +22,8 @@ public class Textboxes {
 		
 		WebElement address = driver.findElement(By.id("textarea"));
 		address.sendKeys("Coimbatore");
+		
+		System.out.println("Textboxes are filled");
 	}
 	
 }
