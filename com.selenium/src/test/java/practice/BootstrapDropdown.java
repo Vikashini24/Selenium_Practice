@@ -43,22 +43,22 @@ public class BootstrapDropdown {
 			 String getOptions = options.get(i).getText(); 
 			 System.out.println(getOptions);
 		//select multiple options
-			 if(getOptions.equalsIgnoreCase("MySQL")) {
+			 if(getOptions.equalsIgnoreCase("MySQL") || getOptions.equalsIgnoreCase("Oracle") ) {
 				 options.get(i).click();
 				 break;
 			 }
 		 }
 		 
 		//using enhanced for loop
-		for(WebElement option : options) {
-			String getOptions = option.getText();
-			System.out.println(getOptions);
-		//select multiple options
-			if(getOptions.equalsIgnoreCase("MySQL")) {
-				option.click();
-				break;
-			}
-		}
+//		for(WebElement option : options) {
+//			String getOptions = option.getText();
+//			System.out.println(getOptions);
+//		//select multiple options
+//			if(getOptions.equalsIgnoreCase("MySQL")) {
+//				option.click();
+//				break;
+//			}
+//		}
 	}
 	
 	

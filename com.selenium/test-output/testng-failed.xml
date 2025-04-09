@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.BootstrapDropdown">
+      <class name="practice.HiddenDropdown">
         <methods>
-          <include name="bsdropdown"/>
-          <include name="quitDriver"/>
+          <include name="hiddenDropdownElement"/>
           <include name="initializeDriver"/>
         </methods>
-      </class> <!-- practice.BootstrapDropdown -->
+      </class> <!-- practice.HiddenDropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
