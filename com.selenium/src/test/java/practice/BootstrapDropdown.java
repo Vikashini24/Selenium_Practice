@@ -10,6 +10,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.sun.tools.javac.main.Option;
+
 public class BootstrapDropdown {
 	
 	WebDriver driver;
@@ -35,15 +37,37 @@ public class BootstrapDropdown {
 		int optionsSize = options.size();
 		System.out.println(optionsSize);
 		
-	}
-	
-	
-	@AfterSuite
-	public void quitDriver() {
-		if(driver!=null) {
-			driver.quit();
+		//print options from dropdown
+		//using for loop
+		 for(int i=0; i<optionsSize; i++) {
+			 String getOptions = options.get(i).getText(); 
+			 System.out.println(getOptions);
+		//select multiple options
+			 if(getOptions.equalsIgnoreCase("MySQL")) {
+				 options.get(i).click();
+				 break;
+			 }
+		 }
+		 
+		//using enhanced for loop
+		for(WebElement option : options) {
+			String getOptions = option.getText();
+			System.out.println(getOptions);
+		//select multiple options
+			if(getOptions.equalsIgnoreCase("MySQL")) {
+				option.click();
+				break;
+			}
 		}
 	}
+	
+	
+//	@AfterSuite
+//	public void quitDriver() {
+//		if(driver!=null) {
+//			driver.quit();
+//		}
+//	}
 	
 	
 }
