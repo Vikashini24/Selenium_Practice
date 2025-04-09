@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -70,15 +71,42 @@ public class AutomationTesting {
 		dropdown.selectByVisibleText("United Kingdom");
 	}
 	
+	@Test (priority=5)
+	public void datePicker1() {
+		WebElement pickDate = driver.findElement(By.id("datepicker"));
+		pickDate.sendKeys("09/24/1997" + Keys.ENTER);
+		System.out.println("Date: " + pickDate.getAttribute("value"));
+	}
 	
-	
-	
-	
-	@AfterSuite
-	public void driverDriver() {
-		if(driver!=null) {
-			driver.quit();
+	@Test (priority=6)
+	public void datePicker2() {
+		WebElement datepick = driver.findElement(By.id("txtDate"));
+		datepick.click();
+		WebElement month = driver.findElement(By.className("ui-datepicker-month"));
+		Select monthDropdown = new Select(month);
+		monthDropdown.selectByVisibleText("Nov");
+		WebElement year = driver.findElement(By.className("ui-datepicker-year"));
+		Select yearDropdown = new Select(year);
+		yearDropdown.selectByValue("2024");
+		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody"));
+		for(WebElement date : dates) {
+			String selectDate = date.getText();
+			System.out.println(selectDate);
+			if(selectDate.equals("3")) {
+				date.click();
+				break;
+			}
 		}
 	}
+	
+	
+	
+	
+//	@AfterSuite
+//	public void driverDriver() {
+//		if(driver!=null) {
+//			driver.quit();
+//		}
+//	}
 	
 }
