@@ -72,32 +72,34 @@ public class AutomationTesting {
 	}
 	
 	@Test (priority=5)
+	public void multiselectDropdown() {
+		WebElement colors = driver.findElement(By.id("colors"));
+		Select dropdown = new Select(colors);
+		if(dropdown.isMultiple()) {
+			//Select multiple options
+			dropdown.selectByVisibleText("Red");
+			dropdown.selectByValue("blue");
+			dropdown.selectByValue("white");
+			List<WebElement> colorsOption = dropdown.getAllSelectedOptions();
+			for(WebElement color : colorsOption) {
+				String getColor = color.getText();
+				System.out.println("Selected colors: " + getColor);
+			}
+		}
+		else {
+			System.out.println("Not a multi-select dropdown");
+		}
+	}
+	
+	@Test (priority=6)
 	public void datePicker1() {
 		WebElement pickDate = driver.findElement(By.id("datepicker"));
 		pickDate.sendKeys("09/24/1997" + Keys.ENTER);
 		System.out.println("Date: " + pickDate.getAttribute("value"));
 	}
 	
-	@Test (priority=6)
-	public void datePicker2() {
-		WebElement datepick = driver.findElement(By.id("txtDate"));
-		datepick.click();
-		WebElement month = driver.findElement(By.className("ui-datepicker-month"));
-		Select monthDropdown = new Select(month);
-		monthDropdown.selectByVisibleText("Nov");
-		WebElement year = driver.findElement(By.className("ui-datepicker-year"));
-		Select yearDropdown = new Select(year);
-		yearDropdown.selectByValue("2024");
-		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody"));
-		for(WebElement date : dates) {
-			String selectDate = date.getText();
-			System.out.println(selectDate);
-			if(selectDate.equals("3")) {
-				date.click();
-				break;
-			}
-		}
-	}
+	
+	
 	
 	
 	
