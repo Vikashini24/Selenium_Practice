@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.AutomationTesting">
+      <class name="dropdowns.AutoSuggestiveDropdown">
         <methods>
-          <include name="selectDropdown"/>
-          <include name="textboxElements"/>
           <include name="initializeDriver"/>
-          <include name="radioButton"/>
-          <include name="checkboxes"/>
-          <include name="datePicker1"/>
-          <include name="multiselectDropdown"/>
+          <include name="autoSuggetion"/>
         </methods>
-      </class> <!-- practice.AutomationTesting -->
+      </class> <!-- dropdowns.AutoSuggestiveDropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
