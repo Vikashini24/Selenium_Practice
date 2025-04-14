@@ -1,40 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2025-04-10T14:58:13 IST" name="Default suite" finished-at="2025-04-10T14:58:21 IST" duration-ms="7955">
-=======
-  <suite started-at="2025-04-13T11:59:39 IST" name="Default suite" finished-at="2025-04-13T11:59:45 IST" duration-ms="5937">
->>>>>>> branch 'main' of https://github.com/Vikashini24/Selenium_Practice.git
+  <suite started-at="2025-04-14T13:54:16 IST" name="Default suite" finished-at="2025-04-14T13:54:21 IST" duration-ms="5368">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2025-04-10T14:58:13 IST" name="Default test" finished-at="2025-04-10T14:58:21 IST" duration-ms="7955">
-      <class name="practice.HiddenDropdown">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:practice.HiddenDropdown@1aa7ecca]" started-at="2025-04-10T14:58:05 IST" name="initializeDriver" finished-at="2025-04-10T14:58:13 IST" duration-ms="7265" status="PASS">
-=======
-    <test started-at="2025-04-13T11:59:39 IST" name="Default test" finished-at="2025-04-13T11:59:45 IST" duration-ms="5937">
-      <class name="dropdowns.AutoSuggestiveDropdown">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:dropdowns.AutoSuggestiveDropdown@6ca8564a]" started-at="2025-04-13T11:59:28 IST" name="initializeDriver" finished-at="2025-04-13T11:59:39 IST" duration-ms="11720" status="PASS">
->>>>>>> branch 'main' of https://github.com/Vikashini24/Selenium_Practice.git
+    <test started-at="2025-04-14T13:54:16 IST" name="Default test" finished-at="2025-04-14T13:54:21 IST" duration-ms="5368">
+      <class name="rahulshetty.Flightbooking">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:rahulshetty.Flightbooking@5876a9af]" started-at="2025-04-14T13:54:10 IST" name="initializeDriver" finished-at="2025-04-14T13:54:16 IST" duration-ms="5394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:1, instance:practice.HiddenDropdown@1aa7ecca]" started-at="2025-04-10T14:58:13 IST" name="login" finished-at="2025-04-10T14:58:21 IST" duration-ms="7876" status="PASS">
-=======
-        <test-method signature="autoSuggetion()[pri:0, instance:dropdowns.AutoSuggestiveDropdown@6ca8564a]" started-at="2025-04-13T11:59:39 IST" name="autoSuggetion" finished-at="2025-04-13T11:59:45 IST" duration-ms="5899" status="PASS">
->>>>>>> branch 'main' of https://github.com/Vikashini24/Selenium_Practice.git
+        <test-method signature="country()[pri:1, instance:rahulshetty.Flightbooking@5876a9af]" started-at="2025-04-14T13:54:16 IST" name="country" finished-at="2025-04-14T13:54:20 IST" duration-ms="4040" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- login -->
-      </class> <!-- practice.HiddenDropdown -->
-=======
-        </test-method> <!-- autoSuggetion -->
-      </class> <!-- dropdowns.AutoSuggestiveDropdown -->
->>>>>>> branch 'main' of https://github.com/Vikashini24/Selenium_Practice.git
+        </test-method> <!-- country -->
+        <test-method signature="trip()[pri:2, instance:rahulshetty.Flightbooking@5876a9af]" started-at="2025-04-14T13:54:20 IST" name="trip" finished-at="2025-04-14T13:54:20 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trip -->
+        <test-method signature="travelCities()[pri:3, instance:rahulshetty.Flightbooking@5876a9af]" started-at="2025-04-14T13:54:20 IST" name="travelCities" finished-at="2025-04-14T13:54:21 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- travelCities -->
+      </class> <!-- rahulshetty.Flightbooking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

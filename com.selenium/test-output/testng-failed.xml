@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dropdowns.AutoSuggestiveDropdown">
+      <class name="rahulshetty.Flightbooking">
         <methods>
-<<<<<<< HEAD
-          <include name="login"/>
-=======
->>>>>>> branch 'main' of https://github.com/Vikashini24/Selenium_Practice.git
+          <include name="travelCities"/>
           <include name="initializeDriver"/>
-          <include name="autoSuggetion"/>
         </methods>
-      </class> <!-- dropdowns.AutoSuggestiveDropdown -->
+      </class> <!-- rahulshetty.Flightbooking -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
