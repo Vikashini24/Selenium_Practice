@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T08:19:07 IST" name="Default suite" finished-at="2025-04-10T08:19:11 IST" duration-ms="4165">
+  <suite started-at="2025-04-10T14:58:13 IST" name="Default suite" finished-at="2025-04-10T14:58:21 IST" duration-ms="7955">
     <groups>
     </groups>
-    <test started-at="2025-04-10T08:19:07 IST" name="Default test" finished-at="2025-04-10T08:19:11 IST" duration-ms="4165">
+    <test started-at="2025-04-10T14:58:13 IST" name="Default test" finished-at="2025-04-10T14:58:21 IST" duration-ms="7955">
       <class name="practice.HiddenDropdown">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:practice.HiddenDropdown@3c407114]" started-at="2025-04-10T08:19:02 IST" name="initializeDriver" finished-at="2025-04-10T08:19:07 IST" duration-ms="5115" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:practice.HiddenDropdown@1aa7ecca]" started-at="2025-04-10T14:58:05 IST" name="initializeDriver" finished-at="2025-04-10T14:58:13 IST" duration-ms="7265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="autosuggestiveDropdown()[pri:1, instance:practice.HiddenDropdown@3c407114]" started-at="2025-04-10T08:19:07 IST" name="autosuggestiveDropdown" finished-at="2025-04-10T08:19:11 IST" duration-ms="4132" status="PASS">
+        <test-method signature="login()[pri:1, instance:practice.HiddenDropdown@1aa7ecca]" started-at="2025-04-10T14:58:13 IST" name="login" finished-at="2025-04-10T14:58:21 IST" duration-ms="7876" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autosuggestiveDropdown -->
+        </test-method> <!-- login -->
       </class> <!-- practice.HiddenDropdown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

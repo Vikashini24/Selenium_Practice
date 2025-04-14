@@ -6,7 +6,6 @@
       <class name="practice.HiddenDropdown">
         <methods>
           <include name="login"/>
-          <include name="hiddenDropdownElement"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- practice.HiddenDropdown -->
