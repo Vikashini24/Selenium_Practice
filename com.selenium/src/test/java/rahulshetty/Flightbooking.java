@@ -7,12 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 
 public class Flightbooking {
@@ -100,16 +99,39 @@ public class Flightbooking {
 		int i;
 		for(i=1; i<2; i++) {
 			driver.findElement(By.id("hrefIncAdt")).click();
-			for(i=0; i<=2; i++) {
-				driver.findElement(By.id("hrefIncChd")).click();
-				for(i=0; i<=1; i++) {
-					driver.findElement(By.id("hrefIncInf")).click();
-				}
+		}
+		for(i=0; i<2; i++) {
+			driver.findElement(By.id("hrefIncChd")).click();
+		}
+		for(i=0; i<1; i++) {
+			driver.findElement(By.id("hrefIncInf")).click();
+		}
+		driver.findElement(By.id("btnclosepaxoption")).click();
+	}
+	
+	@Test (priority=5)
+	public void currency() {
+		WebElement currencyFIeld = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+		Select dropdown = new Select(currencyFIeld);
+		dropdown.selectByValue("INR");
+	}
+	
+	@Test (priority=6)
+	public void checkboxeFIeld() {
+		List<WebElement> checkboxes = driver.findElements(By.xpath("//div[@id='discount-checkbox']/div"));
+		for(WebElement checkbox : checkboxes) {
+			String clickCheckbox = checkbox.getText();
+			if(clickCheckbox.equalsIgnoreCase("Family and Friends")) {
+				checkbox.click();
+				break;
 			}
 		}
 	}
 	
-	
+	@Test (priority=7)
+	public void search() {
+		driver.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
+	}
 	
 	
 	
