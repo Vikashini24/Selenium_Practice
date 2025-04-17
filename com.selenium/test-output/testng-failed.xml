@@ -5,7 +5,7 @@
     <classes>
       <class name="rahulshetty.Flightbooking">
         <methods>
-          <include name="travelCities"/>
+          <include name="passengers"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- rahulshetty.Flightbooking -->

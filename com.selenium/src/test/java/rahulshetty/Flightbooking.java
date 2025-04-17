@@ -12,6 +12,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
+
 public class Flightbooking {
 	
 	WebDriver driver;
@@ -22,8 +25,8 @@ public class Flightbooking {
 		driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	
 	@Test (priority=1)
@@ -48,15 +51,9 @@ public class Flightbooking {
 		}
 	}
 	
-	@Test (priority=2)
-	public void trip() {
-		WebElement roundTrip = driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1"));
-		roundTrip.click();
-		System.out.println("It's a round trip");
-	}
 	
-	@Test (priority=3)
-	public void travelCities() {
+	@Test (priority=2)
+	public void travelCities() throws InterruptedException {
 		WebElement departureCityField = driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT"));
 		departureCityField.click();
 		List<WebElement> departureCityLists = driver.findElements(By.xpath("//div[@id='glsctl00_mainContent_ddl_originStation1_CTNR']//li/a"));
@@ -68,15 +65,52 @@ public class Flightbooking {
 			}
 		}
 		
+		Thread.sleep(3000);
 		List<WebElement> arrivalCityLists = driver.findElements(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR']//li/a"));
 		for(WebElement arrivalCityList : arrivalCityLists) {
 			String arrivalCity = arrivalCityList.getText();
-			System.out.println(arrivalCity);
 			if(arrivalCity.equalsIgnoreCase("Coimbatore (CJB)")) {
 				arrivalCityList.click();
 				break;
 			}
 		}
 	}
+	
+	@Test (priority=3)
+	public void calender() {
+		List<WebElement> months = driver.findElements(By.xpath("//div/span[@class='ui-datepicker-month']"));
+			for(WebElement month : months) {
+				String monthText = month.getText();
+				if(monthText.equalsIgnoreCase("June")) {
+					List<WebElement> days = driver.findElements(By.xpath("//div[@id='ui-datepicker-div']//td/a"));
+					for(WebElement day : days) {
+						if(day.getText().equals("24")) {
+							day.click();
+							break;
+						}
+					}
+				}
+			}
+	}
+	
+	@Test (priority=4)
+	public void passengers() throws InterruptedException {
+		WebElement dropdown = driver.findElement(By.id("divpaxinfo"));
+		dropdown.click();
+		int i;
+		for(i=1; i<2; i++) {
+			driver.findElement(By.id("hrefIncAdt")).click();
+			for(i=0; i<=2; i++) {
+				driver.findElement(By.id("hrefIncChd")).click();
+				for(i=0; i<=1; i++) {
+					driver.findElement(By.id("hrefIncInf")).click();
+				}
+			}
+		}
+	}
+	
+	
+	
+	
 	
 }
