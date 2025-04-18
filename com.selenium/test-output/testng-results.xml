@@ -1,110 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-17T12:32:39 IST" name="Default suite" finished-at="2025-04-17T12:35:49 IST" duration-ms="189597">
+  <suite started-at="2025-04-18T08:12:05 IST" name="Default suite" finished-at="2025-04-18T08:12:07 IST" duration-ms="1774">
     <groups>
     </groups>
-    <test started-at="2025-04-17T12:32:39 IST" name="Default test" finished-at="2025-04-17T12:35:49 IST" duration-ms="189597">
-      <class name="rahulshetty.Flightbooking">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:35 IST" name="initializeDriver" finished-at="2025-04-17T12:32:39 IST" duration-ms="4154" status="PASS">
+    <test started-at="2025-04-18T08:12:05 IST" name="Default test" finished-at="2025-04-18T08:12:07 IST" duration-ms="1774">
+      <class name="webTables.StaticTables">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:webTables.StaticTables@6ca8564a]" started-at="2025-04-18T08:11:58 IST" name="initializeDriver" finished-at="2025-04-18T08:12:05 IST" duration-ms="7142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="country()[pri:1, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:39 IST" name="country" finished-at="2025-04-17T12:32:43 IST" duration-ms="3611" status="PASS">
+        <test-method signature="staticWebTable()[pri:0, instance:webTables.StaticTables@6ca8564a]" started-at="2025-04-18T08:12:05 IST" name="staticWebTable" finished-at="2025-04-18T08:12:07 IST" duration-ms="1700" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- country -->
-        <test-method signature="travelCities()[pri:2, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:43 IST" name="travelCities" finished-at="2025-04-17T12:32:47 IST" duration-ms="3813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- travelCities -->
-        <test-method signature="calender()[pri:3, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:47 IST" name="calender" finished-at="2025-04-17T12:32:47 IST" duration-ms="533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calender -->
-        <test-method signature="passengers()[pri:4, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:47 IST" name="passengers" finished-at="2025-04-17T12:32:49 IST" duration-ms="1149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passengers -->
-        <test-method signature="currency()[pri:5, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:49 IST" name="currency" finished-at="2025-04-17T12:32:49 IST" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- currency -->
-        <test-method signature="checkboxeFIeld()[pri:6, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:49 IST" name="checkboxeFIeld" finished-at="2025-04-17T12:32:49 IST" duration-ms="167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxeFIeld -->
-        <test-method signature="search()[pri:7, instance:rahulshetty.Flightbooking@6b81ce95]" started-at="2025-04-17T12:32:49 IST" name="search" finished-at="2025-04-17T12:35:49 IST" duration-ms="180115" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-21-generic', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [048a2753058e6ae796791cd2f940e752, clickElement {id=f.E089A009D7D9C17D164ED8BEE44C2252.d.B757915C7A637F4D7497CB7F234EB423.e.15}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.52, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44953/devtoo..., se:cdpVersion: 135.0.7049.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (048a2753058e6ae796791cd2f940e752)] -> id: ctl00_mainContent_btn_FindFlights]
-Session ID: 048a2753058e6ae796791cd2f940e752]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-21-generic', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [048a2753058e6ae796791cd2f940e752, clickElement {id=f.E089A009D7D9C17D164ED8BEE44C2252.d.B757915C7A637F4D7497CB7F234EB423.e.15}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.52, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44953/devtoo..., se:cdpVersion: 135.0.7049.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (048a2753058e6ae796791cd2f940e752)] -> id: ctl00_mainContent_btn_FindFlights]
-Session ID: 048a2753058e6ae796791cd2f940e752
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at rahulshetty.Flightbooking.search(Flightbooking.java:133)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- rahulshetty.Flightbooking -->
+        </test-method> <!-- staticWebTable -->
+      </class> <!-- webTables.StaticTables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
