@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -15,9 +16,11 @@ public class StaticTables {
 	
 	@BeforeSuite
 	public void initializeDriver() {
-		driver = new ChromeDriver();
-		driver.get("https://testautomationpractice.blogspot.com/");
-		driver.manage().window().maximize();
+		if(driver==null) {
+			driver = new ChromeDriver();
+			driver.get("https://testautomationpractice.blogspot.com/");
+			driver.manage().window().maximize();
+		}
 	}
 	
 	@Test
@@ -42,8 +45,9 @@ public class StaticTables {
 				WebElement allData = driver.findElement(By.xpath("//table[@name='BookTable']//tr[" + r + "]/td[ " + c + "]"));
 				System.out.print("Data: " + allData.getText() + "\t");
 			}
-			System.out.println("\n");
+			System.out.println();
 		}
+		System.out.println("\n");
 		
 		//print book names whose author is Mukesh
 		for(int r=2; r<rowSize; r++) {
@@ -54,9 +58,29 @@ public class StaticTables {
 				System.out.println("Books name whose author is Mukesh:" +bookName + "\t" + authorName);
 			}
 		}
-
+		System.out.println("\n");
 		
 		
+		//find total price of all the books
+		int total=0;
+		for(int r=2; r<=rowSize; r++) {
+			WebElement prices = driver.findElement(By.xpath("//table[@name='BookTable']//tr[" + r + "]//td[4]"));
+			String priceRow = prices.getText();
+			System.out.println(priceRow);
+			//convert the price to integer and add
+			int price = Integer.parseInt(priceRow);
+			total = total+price;
+		}
+		System.out.println("Total price: " + total);
 	}
+	
+	@AfterSuite
+	public void quiteDiver() {
+		if(driver!=null) {
+			driver.quit();
+		}
+	}
+	
+	
 	
 }
