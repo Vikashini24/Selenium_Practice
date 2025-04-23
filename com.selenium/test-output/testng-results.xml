@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-18T08:12:05 IST" name="Default suite" finished-at="2025-04-18T08:12:07 IST" duration-ms="1774">
+  <suite started-at="2025-04-23T08:59:21 IST" name="Default suite" finished-at="2025-04-23T08:59:22 IST" duration-ms="815">
     <groups>
     </groups>
-    <test started-at="2025-04-18T08:12:05 IST" name="Default test" finished-at="2025-04-18T08:12:07 IST" duration-ms="1774">
-      <class name="webTables.StaticTables">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:webTables.StaticTables@6ca8564a]" started-at="2025-04-18T08:11:58 IST" name="initializeDriver" finished-at="2025-04-18T08:12:05 IST" duration-ms="7142" status="PASS">
+    <test started-at="2025-04-23T08:59:21 IST" name="Default test" finished-at="2025-04-23T08:59:22 IST" duration-ms="815">
+      <class name="rahulshetty.PracticePage">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:rahulshetty.PracticePage@50b472aa]" started-at="2025-04-23T08:59:14 IST" name="initializeDriver" finished-at="2025-04-23T08:59:21 IST" duration-ms="7018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="staticWebTable()[pri:0, instance:webTables.StaticTables@6ca8564a]" started-at="2025-04-18T08:12:05 IST" name="staticWebTable" finished-at="2025-04-18T08:12:07 IST" duration-ms="1700" status="PASS">
+        <test-method signature="radioButton()[pri:1, instance:rahulshetty.PracticePage@50b472aa]" started-at="2025-04-23T08:59:21 IST" name="radioButton" finished-at="2025-04-23T08:59:21 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- staticWebTable -->
-      </class> <!-- webTables.StaticTables -->
+        </test-method> <!-- radioButton -->
+        <test-method signature="suggessionClass()[pri:2, instance:rahulshetty.PracticePage@50b472aa]" started-at="2025-04-23T08:59:21 IST" name="suggessionClass" finished-at="2025-04-23T08:59:22 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suggessionClass -->
+      </class> <!-- rahulshetty.PracticePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

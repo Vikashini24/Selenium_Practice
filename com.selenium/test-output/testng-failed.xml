@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rahulshetty.Flightbooking">
+      <class name="rahulshetty.PracticePage">
         <methods>
-          <include name="search"/>
+          <include name="suggessionClass"/>
+          <include name="radioButton"/>
           <include name="initializeDriver"/>
         </methods>
-      </class> <!-- rahulshetty.Flightbooking -->
+      </class> <!-- rahulshetty.PracticePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
