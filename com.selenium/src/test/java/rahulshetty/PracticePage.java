@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -43,7 +44,12 @@ public class PracticePage {
 		System.out.println(field.getDomProperty("value"));
 	}
 	
-	
+	@Test (priority=3)
+	public void staticDropdown() {
+		WebElement dropdownField = driver.findElement(By.id("dropdown-class-example"));
+		Select dropdown = new Select(dropdownField);
+		
+	}
 	
 	
 	
