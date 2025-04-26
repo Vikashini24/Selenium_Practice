@@ -5,9 +5,8 @@
     <classes>
       <class name="rahulshetty.PracticePage">
         <methods>
-          <include name="suggessionClass"/>
-          <include name="radioButton"/>
           <include name="initializeDriver"/>
+          <include name="switchTabExample"/>
         </methods>
       </class> <!-- rahulshetty.PracticePage -->
     </classes>

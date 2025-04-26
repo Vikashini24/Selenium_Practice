@@ -1,7 +1,9 @@
 package rahulshetty;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -48,8 +50,49 @@ public class PracticePage {
 	public void staticDropdown() {
 		WebElement dropdownField = driver.findElement(By.id("dropdown-class-example"));
 		Select dropdown = new Select(dropdownField);
-		
+		dropdown.selectByVisibleText("Option1");
+		System.out.println(dropdown.getFirstSelectedOption().getText());
 	}
+	
+	@Test (priority=4)
+	public void checkboxExample() {
+		driver.findElement(By.id("checkBoxOption3")).click();
+	}
+	
+//	@Test (priority=5)
+//	public void switchWindowExample() {
+//		driver.findElement(By.id("openwindow")).click();
+//	}
+	
+//	@Test (priority=6)
+//	public void switchTabExample() {
+//		WebElement tab = driver.findElement(By.linkText("Open Tab"));
+//		tab.click();
+//		//handling windows
+//		Set<String> windows = driver.getWindowHandles();
+//		Iterator<String> it = windows.iterator();
+//		String parentId = it.next();
+//		String childId = it.next();
+//		driver.switchTo().window(childId);
+//		String text = driver.findElement(By.linkText("Access all our Courses")).getText();
+//		System.out.println(text);
+//		driver.close();
+//		driver.switchTo().window(parentId);
+//		System.out.println(driver.findElement(By.className("switch-tab")).getDomProperty("value"));
+//	}
+	
+	@Test (priority=7)
+	public void alertExample() {
+		driver.findElement(By.name("enter-name")).sendKeys("Kanniya");
+		//alert
+		driver.findElement(By.id("alertbtn")).click();
+		driver.switchTo().alert().accept();
+		//confirm
+		driver.findElement(By.id("confirmbtn")).click();
+		driver.switchTo().alert().dismiss();
+	}
+	
+	
 	
 	
 	

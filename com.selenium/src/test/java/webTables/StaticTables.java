@@ -58,12 +58,6 @@ public class StaticTables {
 				System.out.println("Books name whose author is Mukesh:" +bookName + "\t" + authorName);
 			}
 		}
-<<<<<<< HEAD
-		
-		
-=======
-		System.out.println("\n");
->>>>>>> branch 'main' of git@github.com:Vikashini24/Selenium_Practice.git
 		
 		
 		//find total price of all the books
