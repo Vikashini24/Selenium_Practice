@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rahulshetty.PracticePage">
+      <class name="mouseEvents.MouseHover">
         <methods>
           <include name="initializeDriver"/>
-          <include name="switchTabExample"/>
+          <include name="mouseHoverExample"/>
         </methods>
-      </class> <!-- rahulshetty.PracticePage -->
+      </class> <!-- mouseEvents.MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
