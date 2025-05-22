@@ -6,6 +6,7 @@
       <class name="mouseEvents.MouseHover">
         <methods>
           <include name="initializeDriver"/>
+          <include name="closeDriver"/>
           <include name="mouseHoverExample"/>
         </methods>
       </class> <!-- mouseEvents.MouseHover -->
